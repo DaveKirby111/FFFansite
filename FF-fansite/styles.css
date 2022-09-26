@@ -31,11 +31,16 @@ body {
     padding: 50px;
 
     text-align: center;
+    display: flex;
+    align-items: center;
 
     border: 2px solid black;
 }
 
 .nav {
+    width: 100%;
+    
+
     border: 2px solid black;
 }
 
@@ -43,18 +48,56 @@ body {
     list-style-type: none;
 }
 
-.footer {
-    clear: both;
-    width: 100%;
-    padding: 30px;
+.nav li {
+    display: inline;
+    text-transform: capitalize;
+    
+    border-right: 2px solid black;
+}
 
-    text-align: center;
+
+.nav a {
+    text-decoration: none;
+  
+    
+    
+}
+
+.content {
+   height: 100vh;
 
     border: 2px solid black;
 }
 
+
+h1 {
+    text-transform: capitalize;
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    border: 2px solid black;
+}
+
+.footer p {
+    margin: auto;
+}
+
 @media only screen and (max-width: 620px){
-    nav, .main, aside {
+    .nav, .content, .aside {
          width: 100%;
          height: auto;
          position: relative;
