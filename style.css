@@ -1,0 +1,131 @@
+/*
+Theme Name: Final Fantasy Fansite
+Author: David Kirby
+Version: 1.0
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.header {
+    padding: 30px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    background-image: url("plains copy.jpg");
+    background-size: cover;
+
+}
+
+.nav {
+
+    background-image: linear-gradient(grey, white);
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+    float: left;
+
+    border-right: 2px solid darkgray;
+}
+
+li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+
+    text-transform: capitalize;
+    color: red;
+}
+
+li a:hover {
+    background-image: linear-gradient(lightblue, white);
+    color: black;
+    text-decoration: underline;
+}
+
+
+.content {
+   height: 100vh;
+
+   background-image: url("7-2 copy.jpg");
+
+
+}
+
+
+h1 {
+    text-transform: capitalize;
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+
+    color: white;
+    text-shadow: 1px 1px 2px black,
+                 0 0 30px blue,
+                 0 0 30px lightblue;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    background-image: linear-gradient(grey, white);
+}
+
+.footer p {
+    margin: auto;
+    color: black
+}
+
+@media only screen and (max-width: 620px){
+    .nav, .content, .aside {
+         width: 100%;
+         height: auto;
+         position: relative;
+         
+     }
+ }
