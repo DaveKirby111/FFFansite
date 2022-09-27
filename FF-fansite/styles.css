@@ -28,45 +28,56 @@ body {
 }
 
 .header {
-    padding: 50px;
+    padding: 30px;
 
     text-align: center;
     display: flex;
     align-items: center;
 
-    border: 2px solid black;
+    background-image: url("plains copy.jpg");
+    background-size: cover;
+
 }
 
 .nav {
-    width: 100%;
-    
 
-    border: 2px solid black;
+    background-image: linear-gradient(grey, white);
 }
 
-.nav ul {
+ul {
     list-style-type: none;
+    overflow: hidden;
+    width: 100%;
 }
 
-.nav li {
-    display: inline;
-    text-transform: capitalize;
-    
-    border-right: 2px solid black;
+li {
+    float: left;
+
+    border-right: 2px solid darkgray;
 }
 
-
-.nav a {
+li a {
+    display: block;
+    padding: 20px;
     text-decoration: none;
-  
-    
-    
+
+    text-transform: capitalize;
+    color: red;
 }
+
+li a:hover {
+    background-image: linear-gradient(lightblue, white);
+    color: black;
+    text-decoration: underline;
+}
+
 
 .content {
    height: 100vh;
 
-    border: 2px solid black;
+   background-image: url("7-2 copy.jpg");
+
+
 }
 
 
@@ -75,6 +86,12 @@ h1 {
     font-size: 60px;
     text-align: center;
     margin: auto;
+    text-decoration: underline;
+
+    color: white;
+    text-shadow: 1px 1px 2px black,
+                 0 0 30px blue,
+                 0 0 30px lightblue;
 }
 
 p {
@@ -89,11 +106,12 @@ p {
     text-align: center;
     text-transform: capitalize;
 
-    border: 2px solid black;
+    background-image: linear-gradient(grey, white);
 }
 
 .footer p {
     margin: auto;
+    color: black
 }
 
 @media only screen and (max-width: 620px){
