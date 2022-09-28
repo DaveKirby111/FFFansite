@@ -4,9 +4,11 @@ add_theme_support('title-tag');
 add_theme_support('custom-logo');
 add_theme_support('post-thumbnails');
 
+add_theme_support('custom-background');
+
 
 function FF_styles() {
-    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.0');
+    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.4');
 }
 
 add_action('wp_enqueue_scripts', 'FF_styles');
@@ -25,19 +27,6 @@ function register_menus() {
 
 add_action('init', 'register_menus');
 
-$defaults = array(
-    'default-color'          => '',
-    'default-image'          => '',
-    'default-repeat'         => '',
-    'default-position-x'     => '',
-    'default-attachment'     => '',
-    'wp-head-callback'       => '_custom_background_cb',
-    'admin-head-callback'    => '',
-    'admin-preview-callback' => ''
-);
-
-add_theme_support( 'custom-background', $defaults );
-
 
 function story_post() {
 
@@ -46,13 +35,13 @@ function story_post() {
         'labels' => array(
 
             'name' => 'Story',
-            'singular_name' => 'Story',
+            'singular_name' => 'Story'
 
         ),
 
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail')
     );
 
     register_post_type('story', $args);
@@ -68,13 +57,13 @@ function character_post() {
         'labels' => array(
 
             'name' => 'Characters',
-            'singular_name' => 'Character',
+            'singular_name' => 'Character'
 
         ),
 
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail')
     );
 
     register_post_type('characters', $args);
@@ -90,13 +79,13 @@ function gameplay_post() {
         'labels' => array(
 
             'name' => 'Gameplay',
-            'singular_name' => 'Gameplay',
+            'singular_name' => 'Gameplay'
 
         ),
 
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail')
     );
 
     register_post_type('gamepley', $args);

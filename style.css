@@ -41,48 +41,99 @@ body {
     display: flex;
     align-items: center;
 
-    background-image: url("plains copy.jpg");
-    background-size: cover;
 
 }
 
 .nav {
-
+    width: 100%;
     background-image: linear-gradient(grey, white);
 }
 
 ul {
-    list-style-type: none;
-    overflow: hidden;
-    width: 100%;
+    list-style-type: none; 
 }
 
-li {
-    float: left;
+#menu-main {
+    display: flex;
+    position: relative;
+}
 
+#menu-main li {
     border-right: 2px solid darkgray;
 }
 
-li a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
+#menu-main .sub-menu li {
+    border-bottom: 2px solid darkgray;
+}
 
-    text-transform: capitalize;
+
+#menu-main a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    display: block;
+
     color: red;
 }
 
-li a:hover {
-    background-image: linear-gradient(lightblue, white);
-    color: black;
-    text-decoration: underline;
+#menu-main a:hover {
+   background-image: linear-gradient(lightblue, white);
+   color: black;
+   text-decoration: underline;
+}
+
+
+.sub-menu-1 li {
+    display: none;
+
+}
+
+.sub-menu-1:hover li {
+    display: block;
+
+}
+
+.sub-menu-2 li {
+    display: none;
+    min-width: 100px;
+}
+
+.sub-menu-2:hover li {
+    display: block;
+}
+
+.sub-menu-3 li {
+    display: none;
+    min-width: 100px;
+}
+
+.sub-menu-3:hover li {
+    display: block;
+}
+
+.sub-menu-4 li {
+    display: none;
+    min-width: 100px;
+}
+
+.sub-menu-4:hover li {
+    display: block;
+}
+
+.sub-menu-5 li {
+    display: none;
+    min-width: 100px;
+}
+
+.sub-menu-5:hover li {
+    display: block;
 }
 
 
 .content {
    height: 100vh;
 
-   background-image: url("7-2 copy.jpg");
+   background-image: url("images/7-2copy2.jpg")
 
 
 }
@@ -113,7 +164,7 @@ p {
     text-align: center;
     text-transform: capitalize;
 
-    background-image: linear-gradient(grey, white);
+    background-image: linear-gradient(white, grey);
 }
 
 .footer p {
