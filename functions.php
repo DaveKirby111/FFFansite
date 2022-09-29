@@ -8,7 +8,7 @@ add_theme_support('custom-background');
 
 
 function FF_styles() {
-    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '1.4');
+    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '2.4');
 }
 
 add_action('wp_enqueue_scripts', 'FF_styles');
@@ -50,14 +50,14 @@ function story_post() {
 
 add_action('init', 'story_post');
 
-function character_post() {
+function FF7_char_post() {
 
     $args = array(
 
         'labels' => array(
 
-            'name' => 'Characters',
-            'singular_name' => 'Character'
+            'name' => 'FF7 Characters',
+            'singular_name' => 'FF7 character'
 
         ),
 
@@ -66,11 +66,97 @@ function character_post() {
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
-    register_post_type('characters', $args);
+    register_post_type('FF7characters', $args);
 
 }
 
-add_action('init', 'character_post');
+add_action('init', 'FF7_char_post');
+
+function FF8_char_post() {
+
+    $args = array(
+
+        'labels' => array(
+
+            'name' => 'FF8 Characters',
+            'singular_name' => 'FF8 character'
+        ),
+
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail')
+    );
+
+    register_post_type('FF8characters', $args);
+
+}
+
+add_action('init', 'FF8_char_post');
+
+function FF9_char_post() {
+
+    $args = array(
+
+        'labels' => array(
+
+            'name' => 'FF9 Characters',
+            'singular_name' => 'FF9 character'
+        ),
+
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail')
+    );
+
+    register_post_type('FF9characters', $args);
+
+}
+
+add_action('init', 'FF9_char_post');
+
+function FF13_char_post() {
+
+    $args = array(
+
+        'labels' => array(
+
+            'name' => 'FF13 Characters',
+            'singular_name' => 'FF13 character'
+        ),
+
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail')
+    );
+
+    register_post_type('FF13characters', $args);
+
+}
+
+add_action('init', 'FF13_char_post');
+
+function FF15_char_post() {
+
+    $args = array(
+
+        'labels' => array(
+
+            'name' => 'FF15 Characters',
+            'singular_name' => 'FF15 character'
+        ),
+
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail')
+    );
+
+    register_post_type('FF15characters', $args);
+
+}
+
+add_action('init', 'FF15_char_post');
+
+
 
 function gameplay_post() {
 

@@ -32,6 +32,8 @@ vertical-align: baseline;
 
 body {
     width: 100%;
+
+    background-image: url("images/7-2copy2.jpg")
 }
 
 .header {
@@ -50,94 +52,114 @@ body {
 }
 
 ul {
-    list-style-type: none; 
+    list-style-type: none;
 }
 
-#menu-main {
-    display: flex;
+ ul li {
+    display: inline-block;
     position: relative;
-}
-
-#menu-main li {
-    border-right: 2px solid darkgray;
-}
-
-#menu-main .sub-menu li {
-    border-bottom: 2px solid darkgray;
-}
-
-
-#menu-main a {
-    text-decoration: none;
     font-size: 15px;
-    padding: 20px;
+
+    border-right: 1px solid darkgray;
+}
+
+li a {
+    text-decoration: none;
     display: block;
+    padding: 20px;
 
     color: red;
 }
 
-#menu-main a:hover {
-   background-image: linear-gradient(lightblue, white);
-   color: black;
-   text-decoration: underline;
+li a:hover {
+    color: black;
+    text-decoration: underline;
+    background-image: linear-gradient(lightblue, white);
+}
+
+.sub-menu li {
+    display: block;
+
+    border-bottom: 2px solid darkgray;
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 999;
+    width: 115px;
+    display: none;
+
+    background-image: linear-gradient(grey, white);
+}
+
+ul li:hover .sub-menu {
+    display: block;
 }
 
 
-.sub-menu-1 li {
+.ff7-sub:hover li{
+    display: block;
+}
+
+.ff7-sub li {
     display: none;
 
 }
 
-.sub-menu-1:hover li {
+.ff8-sub:hover li{
     display: block;
-
 }
 
-.sub-menu-2 li {
+.ff8-sub li {
     display: none;
-    min-width: 100px;
 }
 
-.sub-menu-2:hover li {
+.ff9-sub:hover li{
     display: block;
 }
 
-.sub-menu-3 li {
+.ff9-sub li {
     display: none;
-    min-width: 100px;
 }
 
-.sub-menu-3:hover li {
+.ff13-sub:hover li{
     display: block;
 }
 
-.sub-menu-4 li {
+.ff13-sub li {
     display: none;
-    min-width: 100px;
 }
 
-.sub-menu-4:hover li {
+.ff15-sub:hover li{
     display: block;
 }
 
-.sub-menu-5 li {
+.ff15-sub li {
     display: none;
-    min-width: 100px;
 }
 
-.sub-menu-5:hover li {
-    display: block;
-}
 
 
 .content {
    height: 100vh;
 
-   background-image: url("images/7-2copy2.jpg")
-
-
 }
 
+.inner-content {
+    margin: 50px;
+
+    background-color: gray;
+    opacity: 80%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.message {
+    font-size: 40px;
+    color: red;
+    text-shadow: 2px 2px 2px lightblue;
+    text-align: center;
+}
 
 h1 {
     text-transform: capitalize;
@@ -154,6 +176,12 @@ h1 {
 
 p {
     margin-bottom: 20px;
+
+    color: yellow;
+}
+
+strong {
+    font-size: 20px;
 }
 
 .footer {

@@ -15,6 +15,8 @@
 
 <div class="main">
 
+<div class="inner-content">
+
 <?php
 
 the_post_thumbnail();
@@ -35,6 +37,8 @@ the_post_thumbnail();
 
 
 ?>
+
+</div>
 
 </div>
 

@@ -4,7 +4,9 @@
 
 <div class="main">
 
-<h2>Error: Page not found.</h2>
+<h1>404</h1>
+
+<h2 class="message">Error: Page not found.</h2>
 
 </div>
 
