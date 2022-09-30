@@ -8,17 +8,10 @@
 
 <?php
 
-query_posts( $args );
 
 
-while ( have_posts() ) : the_post();
-echo '<li>';
-the_title();
-echo '</li>';
-endwhile;
 
 
-wp_reset_query();
 ?>
 
 
