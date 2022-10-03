@@ -38,18 +38,6 @@ the_post_thumbnail();
 
 ?>
 
-<?php
-
-$posts = get_posts([
-
-    'post_type' => 'ff7characters',
-    'posts_per_page' => 50,
-
-]);
-
-
-
-?>
 
 </div>
 

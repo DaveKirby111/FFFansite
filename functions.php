@@ -39,8 +39,10 @@ function story_post() {
 
         ),
 
+        'hierarchical' => true,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
@@ -61,8 +63,10 @@ function FF7_char_post() {
 
         ),
 
+        'hierarchical' => false,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
@@ -82,8 +86,10 @@ function FF8_char_post() {
             'singular_name' => 'FF8 character'
         ),
 
+        'hierarchical' => false,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
@@ -103,8 +109,10 @@ function FF9_char_post() {
             'singular_name' => 'FF9 character'
         ),
 
+        'hierarchical' => false,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
@@ -124,8 +132,10 @@ function FF13_char_post() {
             'singular_name' => 'FF13 character'
         ),
 
+        'hierarchical' => false,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
@@ -145,8 +155,10 @@ function FF15_char_post() {
             'singular_name' => 'FF15 character'
         ),
 
+        'hierarchical' => false,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
@@ -169,8 +181,10 @@ function gameplay_post() {
 
         ),
 
+        'hierarchical' => true,
         'public' => true,
         'has_archive' => true,
+        'menu_icon' => 'dashicons-media-archive',
         'supports' => array('title', 'editor', 'thumbnail')
     );
 
