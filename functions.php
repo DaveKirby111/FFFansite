@@ -8,7 +8,7 @@ add_theme_support('custom-background');
 
 
 function FF_styles() {
-    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '2.4');
+    wp_enqueue_style('theme-style', get_template_directory_uri() . "/style.css", array(), '2.9');
 }
 
 add_action('wp_enqueue_scripts', 'FF_styles');
@@ -193,6 +193,12 @@ function gameplay_post() {
 }
 
 add_action('init', 'gameplay_post');
+
+function wpb_autolink_featured_images( $html, $post_id, $post_image_id ) {
+    $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+    return $html;
+    }
+    add_filter( 'post_thumbnail_html', 'wpb_autolink_featured_images', 10, 3 );
 
 
 ?>

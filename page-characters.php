@@ -17,6 +17,10 @@
 
 <div class="inner-content">
 
+<div class="main-content">
+
+<h3>Final Fantasy VII</h3>
+
 <?php
 
 $args = array(
@@ -33,14 +37,17 @@ while ( $ff7->have_posts() ) : $ff7->the_post();
 if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
+echo get_the_title();
+
 endwhile;
 
 wp_reset_postdata(); 
 
 ?>
 
-<h4> <?php echo get_the_title(); ?> </h4>
 <p> <?php the_content(); ?> </p>
+
+<h3>Final Fantasy VIII</h3>
 
 <?php
 
@@ -58,13 +65,102 @@ while ( $ff8->have_posts() ) : $ff8->the_post();
 if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
+
+echo get_the_title();
+
 endwhile;
 
 wp_reset_postdata(); 
 
 ?>
 
-<h4> <?php echo get_the_title(); ?> </h4>
+<p> <?php the_content(); ?> </p>
+
+<h3>Final Fantasy IX</h3>
+
+<?php
+
+$args = array(
+
+    'post_type' => 'ff9characters',
+    'post_status' => 'publish',
+    'posts_per_page' => 10,
+    'order' => 'ASC',
+);
+
+$ff9 = new WP_Query( $args );
+
+while ( $ff9->have_posts() ) : $ff9->the_post();
+if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+}
+
+echo get_the_title();
+
+endwhile;
+
+wp_reset_postdata(); 
+
+?>
+
+<p> <?php the_content(); ?> </p>
+
+<h3>Final Fantasy XIII</h3>
+
+<?php
+
+$args = array(
+
+    'post_type' => 'ff13characters',
+    'post_status' => 'publish',
+    'posts_per_page' => 10,
+    'order' => 'ASC',
+);
+
+$ff13 = new WP_Query( $args );
+
+while ( $ff13->have_posts() ) : $ff13->the_post();
+if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+}
+
+echo get_the_title();
+
+endwhile;
+
+wp_reset_postdata(); 
+
+?>
+
+<p> <?php the_content(); ?> </p>
+
+<h3>Final Fantasy XV</h3>
+
+<?php
+
+$args = array(
+
+    'post_type' => 'ff15characters',
+    'post_status' => 'publish',
+    'posts_per_page' => 10,
+    'order' => 'ASC',
+);
+
+$ff15 = new WP_Query( $args );
+
+while ( $ff15->have_posts() ) : $ff15->the_post();
+if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+}
+
+echo get_the_title();
+
+endwhile;
+
+wp_reset_postdata(); 
+
+?>
+
 <p> <?php the_content(); ?> </p>
 
 
