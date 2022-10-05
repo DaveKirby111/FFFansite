@@ -191,13 +191,90 @@ h1 {
                  0 0 30px lightblue;
 }
 
-h3 {
+h2 {
+
     font-size: 30px;
     text-decoration: underline;
+
     color: yellow;
 
     margin-bottom: 20px;
+
 }
+
+.ff1 {
+    font-size: 50px;
+    text-decoration: underline;
+
+
+    text-shadow: 1px 1px 1px white,
+                 5px 5px 5px rgb(63, 112, 107);
+                 
+
+    margin-bottom: 20px;
+}
+
+.ff2 {
+    font-size: 50px;
+    text-decoration: underline;
+
+    text-shadow: 1px 1px 1px white;
+
+    margin-bottom: 20px;
+}
+
+.ff3 {
+    font-size: 50px;
+    text-decoration: underline;
+
+    display: inline;
+    float: left;
+
+
+    text-shadow: 1px 1px 1px white,
+                 5px 5px 5px rgb(63, 112, 107);
+}
+
+.ff3-1 {
+    font-size: 50px;
+    text-decoration: underline;
+
+
+
+    text-shadow: 1px 1px 1px white,
+                 5px 5px 5px rgb(63, 112, 107);
+
+    color: orange;
+
+    margin-bottom: 20px;
+}
+
+.ff9-heading {
+    clear: both;
+}
+
+
+.ff4 {
+    font-size: 50px;
+    text-decoration: underline;
+
+    text-shadow: 1px 1px 1px white,
+                 5px 5px 5px rgb(63, 112, 107);
+
+    margin-bottom: 20px;
+}
+
+.ff5 {
+    font-size: 50px;
+    text-decoration: underline;
+
+    text-shadow: 1px 1px 1px white,
+                 5px 5px 30px white;
+
+    margin-bottom: 20px;
+}
+
+
 
 ol {
     color: yellow;

@@ -19,7 +19,7 @@
 
 <div class="main-content">
 
-<h3>Final Fantasy VII</h3>
+<h3 class="ff1">Final Fantasy VII</h3>
 
 <?php
 
@@ -47,7 +47,7 @@ wp_reset_postdata();
 
 <p> <?php the_content(); ?> </p>
 
-<h3>Final Fantasy VIII</h3>
+<h3 class="ff2">Final Fantasy VIII</h3>
 
 <?php
 
@@ -76,7 +76,13 @@ wp_reset_postdata();
 
 <p> <?php the_content(); ?> </p>
 
-<h3>Final Fantasy IX</h3>
+<div class="ff9-heading">
+
+<h3 class="ff3">Final Fantasy</h3> 
+<h3 class="ff3-1">IX</h3>
+
+</div>
+
 
 <?php
 
@@ -105,7 +111,7 @@ wp_reset_postdata();
 
 <p> <?php the_content(); ?> </p>
 
-<h3>Final Fantasy XIII</h3>
+<h3 class="ff4">Final Fantasy XIII</h3>
 
 <?php
 
@@ -134,7 +140,7 @@ wp_reset_postdata();
 
 <p> <?php the_content(); ?> </p>
 
-<h3>Final Fantasy XV</h3>
+<h3 class="ff5">Final Fantasy XV</h3>
 
 <?php
 
