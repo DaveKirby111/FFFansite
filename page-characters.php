@@ -38,7 +38,9 @@ if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
 
+echo '<p class="title">';
 echo get_the_title();
+echo '</p>';
 
 endwhile;
 
@@ -67,7 +69,9 @@ if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
 
+echo '<p class="title">';
 echo get_the_title();
+echo '</p>';
 
 endwhile;
 
@@ -102,7 +106,9 @@ if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
 
+echo '<p class="title">';
 echo get_the_title();
+echo '</p>';
 
 endwhile;
 
@@ -131,7 +137,9 @@ if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
 
+echo '<p class="title">';
 echo get_the_title();
+echo '</p>';
 
 endwhile;
 
@@ -160,7 +168,9 @@ if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
 
+echo '<p class="title">';
 echo get_the_title();
+echo '</p>';
 
 endwhile;
 
