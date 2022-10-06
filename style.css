@@ -164,12 +164,43 @@ ul li:hover .sub-menu {
     padding: 10px;
     margin: 10px;
 
+
+    display: flex;
+
 }
 
 #text {
     color: yellow;
+
 }
 
+img {
+    margin-bottom: 20px;
+}
+
+.ff13eidolons {
+    width: 50%;
+
+    background-color: pink;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table, th, td {
+    border: 2px solid pink;
+    padding: 10px;
+}
+
+th {
+    font-size: 20px;
+    background-color: white;
+}
+
+td {
+    background-color: white;
+}
 
 .message {
     font-size: 40px;
@@ -273,7 +304,6 @@ h2 {
 
     margin-bottom: 20px;
 }
-
 
 
 ol {

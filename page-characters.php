@@ -37,6 +37,7 @@ while ( $ff7->have_posts() ) : $ff7->the_post();
 if ( has_post_thumbnail() ) {
     the_post_thumbnail();
 }
+
 echo get_the_title();
 
 endwhile;
