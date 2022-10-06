@@ -1,5 +1,5 @@
-Site Name: Final Fantasy Fansite
-Author: David Kirby
+Site Name: Final Fantasy Fansite <br>
+Author: David Kirby<br>
 Date: Oct. 6, 2022
 
 Note: Only including the Final Fantasy games that I like. Even then, there are some that I am omitting. There are pages for the characters in each game. I have omitted some characters due to not having much to talk about. The homepage contains an intro of my history with Final Fantasy.
