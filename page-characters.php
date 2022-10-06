@@ -35,7 +35,10 @@ $ff7 = new WP_Query( $args );
 
 while ( $ff7->have_posts() ) : $ff7->the_post();
 if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    echo '';
+    the_post_thumbnail('thumbnail');
+    echo '';
 }
 
 echo '<p class="title">';

@@ -44,6 +44,8 @@ body {
     display: flex;
     align-items: center;
 
+    font-family: 'Times New Roman', Times, serif;
+
 
 }
 
@@ -163,15 +165,20 @@ ul li:hover .sub-menu {
 .attachment-post-thumbnail {
     padding: 10px;
     margin: 10px;
+    
+}
 
+.attachment-post-thumbnail a {
+   width: 30px;
 
-    display: flex;
 
 }
 
  .title {
     color: yellow;
     font-size: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -314,6 +321,8 @@ ol {
 
 p {
     margin-bottom: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
 
     color: yellow;
 }
