@@ -11,6 +11,8 @@ Games:
 4. Final Fantasy 13
 5. Final Fantasy 15
 
+
+
 Characters Included:
 
 FF7:
@@ -55,6 +57,8 @@ FF15:
 5. Lunafreya
 6. Ardyn
 
+
+
 Not Included:
 
 FF7:
@@ -63,6 +67,8 @@ FF7:
 
 FF8:
 1. Seifer
+2. Edea
+3. Ultimecia
 
 FF9:
 1. Amarant

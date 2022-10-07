@@ -2,6 +2,8 @@
 
 <div class="content">
 
+<div class="nav">
+
 <?php 
         
         /*wp_nav_menu(
@@ -12,6 +14,8 @@
             );*/
         
         ?>
+
+        </div>
 
 <div class="main">
 
