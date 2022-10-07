@@ -69,7 +69,10 @@ $ff8 = new WP_Query( $args );
 
 while ( $ff8->have_posts() ) : $ff8->the_post();
 if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    echo '';
+    the_post_thumbnail('thumbnail');
+    echo '';
 }
 
 echo '<p class="title">';
@@ -106,7 +109,10 @@ $ff9 = new WP_Query( $args );
 
 while ( $ff9->have_posts() ) : $ff9->the_post();
 if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    echo '';
+    the_post_thumbnail('thumbnail');
+    echo '';
 }
 
 echo '<p class="title">';
@@ -137,7 +143,10 @@ $ff13 = new WP_Query( $args );
 
 while ( $ff13->have_posts() ) : $ff13->the_post();
 if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    echo '';
+    the_post_thumbnail('thumbnail');
+    echo '';
 }
 
 echo '<p class="title">';
@@ -168,7 +177,10 @@ $ff15 = new WP_Query( $args );
 
 while ( $ff15->have_posts() ) : $ff15->the_post();
 if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+    echo '';
+    the_post_thumbnail('thumbnail');
+    echo '';
 }
 
 echo '<p class="title">';
